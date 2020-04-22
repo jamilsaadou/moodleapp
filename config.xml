@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.moodle.moodlemobile" version="3.8.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="net.estniger.learn" version="3.8.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>EST Niger</name>
     <config-file platform="android" parent="/manifest">
     <uses-sdk tools:overrideLibrary="org.apache.cordova,com.library.plugin" />
     </config-file>  
     <description>Moodle official app</description>
-    <author email="mobile@moodle.com" href="http://moodle.com">NNumerique</author>
+    <author email="contact@nnumerique.com" href="http://nnumerique.com">NNumerique</author>
     <content src="index.html" />
     <access origin="*" />
     <access launch-external="yes" origin="tel:*" />
@@ -162,7 +162,7 @@
     <plugin name="cordova-plugin-file-opener2" spec="2.2.1" />
     <plugin name="cordova-plugin-file-transfer" spec="1.7.1" />
     <plugin name="cordova-plugin-geolocation" spec="4.0.2">
-        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="We need your location so you can attach it as part of your submissions." />
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Nous avions besoin de connaitre votre position." />
     </plugin>
     <plugin name="cordova-plugin-globalization" spec="1.11.0" />
     <plugin name="cordova-plugin-inappbrowser" spec="3.1.0" />
