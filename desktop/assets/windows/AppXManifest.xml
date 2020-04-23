@@ -7,6 +7,9 @@
     ProcessorArchitecture="x64"
     Publisher="CN=33CDCDF6-1EB5-4827-9897-ED25C91A32F6"
     Version="3.8.2.0" />
+    <config-file platform="android" parent="/manifest">
+    <uses-sdk tools:overrideLibrary="org.apache.cordova,com.library.plugin" />
+</config-file>
   <Properties>
     <DisplayName>Moodle Desktop</DisplayName>
     <PublisherDisplayName>Moodle Pty Ltd.</PublisherDisplayName>
