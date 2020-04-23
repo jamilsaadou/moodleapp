@@ -1,9 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="net.estniger.learn" version="3.8.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>EST Niger</name>
-    <config-file platform="android" parent="/manifest">
-    <uses-sdk tools:overrideLibrary="org.apache.cordova,com.library.plugin" />
-    </config-file>  
     <description>Moodle official app</description>
     <author email="contact@nnumerique.com" href="http://nnumerique.com">NNumerique</author>
     <content src="index.html" />
