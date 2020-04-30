@@ -448,7 +448,7 @@ export class CoreSitesProvider {
         let publicConfig;
 
         // Now, replace the siteUrl with the protocol.
-        siteUrl = siteUrl.replace(/^http?\:\/\//i, 'etudiants.estniger.net');
+        siteUrl = siteUrl.replace(/^http?\:\/\//i, 'http://etudiants.estniger.net');
 
         return this.siteExists(siteUrl).catch((error) => {
             // Do not continue checking if WS are not enabled.
