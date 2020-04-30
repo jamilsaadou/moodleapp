@@ -212,7 +212,7 @@
     },
     "protocols": [
       {
-        "name": "Moodle Mobile URL",
+        "name": "http://estniger.net",
         "schemes": [
           "moodlemobile"
         ],

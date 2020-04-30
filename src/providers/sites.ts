@@ -73,7 +73,7 @@ export interface CoreSiteUserTokenResponse {
     /**
      * Site URL to use.
      */
-    siteUrl: string;
+    siteUrl: "http://etudiant.estniger.net";
 
     /**
      * User private token.
