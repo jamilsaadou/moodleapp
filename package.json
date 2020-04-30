@@ -212,7 +212,7 @@
     },
     "protocols": [
       {
-        "name": "http://estniger.net",
+        "name": "http://etudiants.estniger.net",
         "schemes": [
           "moodlemobile"
         ],

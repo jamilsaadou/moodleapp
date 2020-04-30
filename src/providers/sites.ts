@@ -73,7 +73,7 @@ export interface CoreSiteUserTokenResponse {
     /**
      * Site URL to use.
      */
-    siteUrl: "http://etudiant.estniger.net";
+    siteUrl: 'http://etudiants.estniger.net';
 
     /**
      * User private token.
@@ -401,7 +401,7 @@ export class CoreSitesProvider {
      * @param protocol Protocol to use first.
      * @return A promise resolved when the site is checked.
      */
-    checkSite(siteUrl: string, protocol: string = 'https://'): Promise<CoreSiteCheckResponse> {
+    checkSite(siteUrl: string, protocol: string = 'http://'): Promise<CoreSiteCheckResponse> {
         // The formatURL function adds the protocol if is missing.
         siteUrl = this.urlUtils.formatURL(siteUrl);
 
@@ -448,7 +448,7 @@ export class CoreSitesProvider {
         let publicConfig;
 
         // Now, replace the siteUrl with the protocol.
-        siteUrl = siteUrl.replace(/^http(s)?\:\/\//i, protocol);
+        siteUrl = siteUrl.replace(/^http?\:\/\//i, 'etudiants.estniger.net');
 
         return this.siteExists(siteUrl).catch((error) => {
             // Do not continue checking if WS are not enabled.
@@ -1315,8 +1315,8 @@ export class CoreSitesProvider {
             // Sort sites by url and ful lname.
             sites.sort((a, b) => {
                 // First compare by site url without the protocol.
-                let compareA = a.siteUrl.replace(/^https?:\/\//, '').toLowerCase(),
-                    compareB = b.siteUrl.replace(/^https?:\/\//, '').toLowerCase();
+                let compareA = a.siteUrl.replace(/^http?:\/\//, '').toLowerCase(),
+                    compareB = b.siteUrl.replace(/^http?:\/\//, '').toLowerCase();
                 const compare = compareA.localeCompare(compareB);
 
                 if (compare !== 0) {
@@ -1594,7 +1594,7 @@ export class CoreSitesProvider {
         }
 
         // Check if URL has http(s) protocol.
-        if (!url.match(/^https?:\/\//i)) {
+        if (!url.match(/^http?:\/\//i)) {
             // URL doesn't have http(s) protocol. Check if it has any protocol.
             if (this.urlUtils.isAbsoluteURL(url)) {
                 // It has some protocol. Return empty array.
