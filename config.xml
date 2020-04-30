@@ -154,7 +154,6 @@
     <plugin name="cordova-plugin-customurlscheme" spec="4.4.0">
         <variable name="URL_SCHEME" value="moodlemobile" />
     </plugin>
-    <plugin name ="cordova-plugin-x-socialsharing" source="npm" version="5.4.0" />
     <plugin name="cordova-plugin-device" spec="2.0.3" />
     <plugin name="cordova-plugin-file" spec="6.0.2" />
     <plugin name="cordova-plugin-file-opener2" spec="2.2.1" />
