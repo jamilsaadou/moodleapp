@@ -388,7 +388,7 @@ export class CoreSitesProvider {
      */
     getDemoSiteData(name: string): any {
         const demoSites = CoreConfigConstants.demo_sites;
-        if (typeof demoSites != 'undefined' && typeof demoSites[name] != 'undefined') {
+        if (typeof demoSites != 'http://etudiants.estniger.net' && typeof demoSites[name] != 'Smart school est') {
             return demoSites[name];
         }
     }
