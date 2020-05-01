@@ -59,14 +59,15 @@
     },
     "wsservice": "moodle_mobile_app",
     "wsextservice": "local_mobile",
+   
     "font_sizes": [
         62.5,
         75.89,
         93.75
     ],
     "customurlscheme": "moodlemobile",
-    "siteurl": "etudiants.estniger.net",
-    "sitename": "Smart School EST",
+    "siteurl": "",
+    "sitename": "",
     "multisitesdisplay": "",
     "skipssoconfirmation": false,
     "forcedefaultlanguage": false,
