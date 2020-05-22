@@ -190,8 +190,8 @@
   },
   "main": "desktop/electron.js",
   "build": {
-    "appId": "com.moodle.moodledesktop",
-    "productName": "Moodle Desktop",
+    "appId": "net.estniger.app",
+    "productName": "Smart School EST",
     "files": [
       "desktop/electron.js",
       "www/**/*",
